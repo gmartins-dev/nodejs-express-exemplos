@@ -1,4 +1,5 @@
 .md = mark down
+projeto feito usando a arquitetura MVC
 
 # Passos para rodar o projeto: 
 
@@ -11,5 +12,11 @@
 - Rodar localmente usando `npm run dev`
 
 
+=======================================
+
+Documentação do protocolo HTTP:
+
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
 
 

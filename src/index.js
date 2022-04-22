@@ -1,8 +1,12 @@
-const express = require('express') //importando o projeto
+import * as express from 'express' //importando o projeto
 const app = express() //chamando a função
 
-app.get('/', function (req, res) {
-  res.send('Hellooooo Worlddddd')
-})
+import userController from './controller/userController'
+import postController from './controller/postController'
 
-app.listen(3000, () => console.log('NODE RUNNING --> http://localhost:3000/'))
+//importando/adicionando as rotas ao index.js
+app.use('/user', userController)
+app.use('/post', postController)
+
+
+app.listen(3000, () => console.log('OK NODE IS RUNNING AT --> http://localhost:3000/'))
