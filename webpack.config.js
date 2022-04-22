@@ -11,7 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
-        extension: ['.js']
+        extensions: ['.js']
     },
     plugins: [
         new NodemonPLugin()
