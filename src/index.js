@@ -1,8 +1,9 @@
 import * as express from 'express' //importando o projeto
 const app = express() //chamando a função
+app.use(express.json())
 
-import userController from './controller/userController'
-import postController from './controller/postController'
+import userController from './modules/user/userController'
+import postController from './modules/post/postController'
 
 //importando/adicionando as rotas ao index.js
 app.use('/user', userController)

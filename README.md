@@ -1,5 +1,5 @@
 .md = mark down
-projeto feito usando a arquitetura MVC
+projeto feito usando a arquitetura modular
 
 # Passos para rodar o projeto: 
 
@@ -18,5 +18,8 @@ Documentação do protocolo HTTP:
 
 https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods
 https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
+
+
+
 
 
