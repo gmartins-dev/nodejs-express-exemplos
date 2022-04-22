@@ -21,5 +21,5 @@ https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
 
 
 
-
-
+//para verificar se há algum erro
+try {} catch (errror) {res.status(500).send(error.message)}

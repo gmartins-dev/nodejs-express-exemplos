@@ -5,8 +5,16 @@ import { signup } from './userService'
 const router = Router ()
 
 router.post('/signup', (req,res) => {
-    const answer = signup(req.body)
-    res.send('answer')
+    try {
+        const answer = signup(req.body)
+        res.send(answer)
+    } catch (err) {
+        if(err.message === 'email_existente')
+            return res.status(400).send(err.message) //erro usuario bad request
+        
+        res.status(500).send(err.message) //erro desconhecido do servidor
+    }
+    
 })
 
 router.post('/login', (req,res) => {
@@ -14,3 +22,4 @@ router.post('/login', (req,res) => {
 })
 
 export default router
+
