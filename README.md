@@ -31,3 +31,5 @@ Token = Json + Chave Secreta
 libs : JWT + Cookie Parser
 npm i jsonwebtoken@8.5.1 cookie-parser@1.4.6
 
+//criação de Middleware verification/validation
+

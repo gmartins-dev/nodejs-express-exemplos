@@ -1,8 +1,6 @@
-import { sign } from 'jsonwebtoken'
+import { generateAcessToken } from '../../utils/auth'
 
 let users = []
-
-const generateAcessToken = (data) => sign(data, 'secret')
 
 //função para verificar se o email já existe
 const getUserByEmail = (searchEmail) =>
