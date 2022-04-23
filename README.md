@@ -33,3 +33,7 @@ npm i jsonwebtoken@8.5.1 cookie-parser@1.4.6
 
 //criação de Middleware verification/validation
 
+//criação das funções para fazer os posts
+
+
+?? como posso colocar "regras" para senha? tipo num-min, caracteres permitidos/proibidos etc...
