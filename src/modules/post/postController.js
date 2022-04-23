@@ -14,7 +14,8 @@ router.post('/', verifyAcessToken, (req,res) => {
     }
 })
 
-router.post('/:id?', verifyAcessToken, (req,res) => {
+//DUAS OPCOES: 1) listas todos posts e 2) listar/filtrar apenas um post especifico
+router.get('/:id?', verifyAcessToken, (req,res) => {
     
     try {
         const posts = getPosts(req.params.id)
@@ -25,8 +26,7 @@ router.post('/:id?', verifyAcessToken, (req,res) => {
 
         res.status(500).send(err.message)
     }
-    
-    //DUAS OPCOES: 1) listas todos posts e 2) listar/filtrar apenas um post especifico
+
     res.send('GET POST ./')
 })
 

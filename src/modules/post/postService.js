@@ -2,7 +2,7 @@ let posts = []
 
 export const createPost = (data, user) => {
 
-    const post =     {
+    const post = {
         createdBy: user.email,
         ...data
    }
@@ -12,8 +12,9 @@ export const createPost = (data, user) => {
 }
 
 export const getPosts = (id) => {
-    
+
     if(id) {
+        //regra procurar pelo post especifico pelo id
         const post = posts[id]
         if(!post) throw new Error('post_not_exist')
 
