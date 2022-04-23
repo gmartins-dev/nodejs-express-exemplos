@@ -23,3 +23,11 @@ https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
 
 //para verificar se há algum erro
 try {} catch (errror) {res.status(500).send(error.message)}
+
+
+//utilização de tokens para dar segurança a autenticação
+JWT -> Json Web Tokens (site: jwt.io)
+Token = Json + Chave Secreta
+libs : JWT + Cookie Parser
+npm i jsonwebtoken@8.5.1 cookie-parser@1.4.6
+
